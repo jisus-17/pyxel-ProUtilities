@@ -3,6 +3,7 @@
 # ToDo:
 
 * [x] Constants and configurations globally
+* [x] Math utiles
 * [ ] Entity managament
 * [ ] Collisions and borders
 * [ ] Add gravity

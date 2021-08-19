@@ -2,6 +2,7 @@
 
 # ToDo:
 
+* [x] Constants and configurations globally
 * [ ] Entity managament
 * [ ] Collisions and borders
 * [ ] Add gravity

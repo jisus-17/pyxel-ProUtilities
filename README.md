@@ -17,7 +17,7 @@
  pip install pyxel 
 
 # Thanks to:
+
 #### FlyByte Studio for support me || http://flybyte.co/
 #### Rhomita for inspiration and ideas || https://rhomita.com
-
 #### Kitao for making an awesome engine || https://github.com/kitao/pyxel/

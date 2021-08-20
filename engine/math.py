@@ -45,3 +45,17 @@ async def percentaje(n=0, n_max=0, t=0, f=0, action=False):
 
         return n
 
+def square_vectors(x, y, h, w):
+    """
+    desde el punto arriba izquierda dando la x y de ese punto, genera el resto de esquinas usando el ancho w y el alto w
+    """
+    a_x, a_y = x, y 
+    b_x, b_y = x + w, y
+    c_x, c_y = x, y + h
+    d_x, d_y = x + w, y + h
+
+    vectors = [a_x, b_x, c_x, d_x, a_y, b_y, c_y, d_y]
+
+    print(vectors)
+
+    return vectors

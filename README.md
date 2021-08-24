@@ -4,6 +4,7 @@
 
 * [x] Constants and configurations globally
 * [x] Math utiles
+* [x] Simple utils and movements to entity
 * [ ] Entity managament
 * [ ] Collisions and borders
 * [ ] Add gravity

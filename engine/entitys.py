@@ -1,3 +1,4 @@
+import collisions
 import setting
 import utils
 import math
@@ -41,7 +42,6 @@ class entity(entity_manager):
     base de entidades
     """
     pass
-
 
 
 class player(entity):

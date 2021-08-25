@@ -59,7 +59,6 @@ def square_vectors(x, y, h, w):
     d_x, d_y = x + w, y + h
 
     vectors = [a_x, a_y, b_x, b_y, c_x, c_y, d_x, d_y]
-    print(vectors)
 
     return vectors
 

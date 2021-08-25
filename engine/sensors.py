@@ -1,8 +1,9 @@
-from .game_math import *
-from .collisions import *
-from .setting import *
+from game_math import *
+from collisions import *
+from setting import *
 import pyxel
 import time
+
 
 class sensor:
     """
@@ -26,7 +27,7 @@ class sensor:
             pass
 
 
-def create_sersor(obj_parent, n=4):
+def create_sersor(obj_parent):
     """
     crea el sensor usando la clase sensor para instanciar los cuatro vectores
     """
@@ -36,10 +37,28 @@ def create_sersor(obj_parent, n=4):
     w = obj_parent.w
     vector_list = square_vectors(x, y, h, w)
 
-    # tiene que ir cada dos elementos de la lista y crear un obj del sensor con su x , y 
+    # tiene que ir cada dos elementos de la lista y crear un obj del sensor con su x , y
 
     l = len(vector_list)
     i = 0
     while i > l:
-        sensor(vector_list[i], vector_list[i+1])
+        sensor(vector_list[i], vector_list[i + 1])
         i += 2
+
+
+class example:
+    """
+    clase para probar funcionalidad
+    """
+
+    def __init__(self, x, y, w, h):
+        """
+        docstring
+        """
+        self.x = x
+        self.y = y
+        self.w = w
+        self.h = h
+
+
+create_sersor(example(10, 10, 10, 10))

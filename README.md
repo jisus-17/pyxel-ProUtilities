@@ -14,7 +14,8 @@
 
 
 # Info:
- A game writed in python with a custom engine based on pyxel
+ pyxel-PU or Pyxel ProUtilitis are a project to simplify the form of making pyxel games 
+ Readme, wiki and documentation are WIP
  You will need pyxel installed to use the engine, or use the exe file with no control over the code
  pip install pyxel 
 

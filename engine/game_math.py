@@ -53,12 +53,21 @@ def square_vectors(x, y, h, w):
     """
     desde el punto arriba izquierda dando la x y de ese punto, genera el resto de esquinas usando el ancho w y el alto w
     """
+    #1
     a_x, a_y = x, y
+    #2
     b_x, b_y = x + w, y
+    #3
     c_x, c_y = x, y + h
+    #4
     d_x, d_y = x + w, y + h
 
-    vectors = [a_x, a_y, b_x, b_y, c_x, c_y, d_x, d_y]
+    a = [a_x, a_y]
+    b = [b_x, b_y]
+    c = [c_x, c_y]
+    d = [d_x, d_y]
+
+    vectors = [a, b, c, d]
 
     return vectors
 

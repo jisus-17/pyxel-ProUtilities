@@ -12,22 +12,16 @@ class sensor:
 
     def __init__(self, x, y):
         """
-        docstring
+        usa el parámetr sensor list de donde extrae la posición 1 x , la 2 y
         """
         self.x = x
         self.y = y
 
     def draw(self):
-        """
-        docstring
-        """
-        if debug == True:
-            pyxel.rectb(self.x, self.y, 5, 5, 8)
-        else:
-            pass
+        pyxel.rectb(self.x, self.y, 5, 5, 8)
 
 
-def create_sersor(obj_parent):
+def create_sensor(obj_parent):
     """
     crea el sensor usando la clase sensor para instanciar los cuatro vectores
     """
@@ -37,13 +31,45 @@ def create_sersor(obj_parent):
     w = obj_parent.w
     vector_list = square_vectors(x, y, h, w)
 
-    # tiene que ir cada dos elementos de la lista y crear un obj del sensor con su x , y
+    # cada parte de la lista a su vez es otra lista de
+    # 2 elementos x , y en ese orden y lo pasa a la clase sensor
+    a = vector_list[0]
+    b = vector_list[1]
+    c = vector_list[2]
+    d = vector_list[3]
 
-    l = len(vector_list)
-    i = 0
-    while i > l:
-        sensor(vector_list[i], vector_list[i + 1])
-        i += 2
+    top_s = sensor(a[0], a[1])
+    bottom_s = sensor(b[0], b[1])
+    right_s = sensor(c[0], c[1])
+    left_s = sensor(d[0], d[1])
+
+    obj_parent.sensors = [top_s, bottom_s, right_s, left_s]
+
+
+def update_sensor(obj_parent):
+    """
+    docstring
+    """
+    x = obj_parent.x
+    y = obj_parent.y
+    h = obj_parent.h
+    w = obj_parent.w
+    sensors = obj_parent.sensors
+
+    vector_list = square_vectors(x, y, h, w)
+
+    a = vector_list[0]
+    b = vector_list[1]
+    c = vector_list[2]
+    d = vector_list[3]
+
+    sensors[0] = sensor(a[0], a[1])
+
+    sensors[1] = sensor(b[0], b[1])
+
+    sensors[2] = sensor(c[0], c[1])
+
+    sensors[3] = sensor(d[0], d[1])
 
 
 class example:
@@ -59,6 +85,4 @@ class example:
         self.y = y
         self.w = w
         self.h = h
-
-
-create_sersor(example(10, 10, 10, 10))
+        self.sensors = []

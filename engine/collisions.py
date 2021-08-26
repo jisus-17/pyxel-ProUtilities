@@ -1,5 +1,6 @@
 import setting
 from game_math import square_vectors, square_distance
+from sensors import *
 
 
 class make_sensor:

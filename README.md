@@ -22,4 +22,5 @@
 
 #### FlyByte Studio for support me || http://flybyte.co/
 #### Rhomita for inspiration and ideas || https://rhomita.com
+#### Cereale for inspiration and base project to look at || https://gitlab.com/Cereale/pyxel-game-template/-/tree/master/
 #### Kitao for making an awesome engine || https://github.com/kitao/pyxel/

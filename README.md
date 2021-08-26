@@ -1,4 +1,4 @@
-# python game and engine
+# Pyxel ProUtilities
 
 # ToDo:
 

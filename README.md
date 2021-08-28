@@ -1,4 +1,4 @@
-![Image](docs/assets/pyxelPU_logo152x64.png)
+![Image](assets/pyxelPU_logo152x64.png)
 # Pyxel ProUtilities
 
 # ToDo:

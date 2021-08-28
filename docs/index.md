@@ -1,4 +1,5 @@
 ## Welcome to GitHub Pages
+![Image](assets/pyxelPU_logo_152x64.png)
 
 You can use the [editor on GitHub](https://github.com/jisus-17/pyxel-ProUtilities/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
 

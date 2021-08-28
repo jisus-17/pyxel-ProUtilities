@@ -1,5 +1,5 @@
-![Image](assets/pyxelPU_logo152x64.png)
-<img src="assets/pyxelPU_logo152x64.png">
+![Image](main/assets/pyxelPU_logo152x64.png)
+<img src="main/assets/pyxelPU_logo152x64.png">
 # Pyxel ProUtilities
 
 # ToDo:
